@@ -3,10 +3,10 @@ https://marc1k3y.github.io/web-site/
 
 ## How use?
 
-`npm i react-nav-burger`
+`npm i react-navigation-burger`
 
 ```
-import Burger from "react-nav-burger"
+import {Burger} from "react-navigation-burger"
 
 export const Header = () => {
 
