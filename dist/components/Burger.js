@@ -21,11 +21,15 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 
 const Burger = _ref => {
   let {
-    links
+    links,
+    navbarBckg = "whitesmoke",
+    activeLinkBckg = "lightgray",
+    linkTextColor = "black"
   } = _ref;
   const [moveBurger, setMoveBurger] = (0, _react.useState)(false);
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
-    className: "burger-wrapper"
+    className: "burger-wrapper",
+    onClick: () => setMoveBurger(!moveBurger)
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "top-bun",
     style: {
@@ -47,7 +51,12 @@ const Burger = _ref => {
       marginTop: moveBurger && "3px"
     }
   })), /*#__PURE__*/_react.default.createElement(_Navbar.default, {
-    links: links
+    links: links,
+    visible: moveBurger,
+    close: setMoveBurger,
+    navbarBckg: navbarBckg,
+    activeLinkBckg: activeLinkBckg,
+    linkTextColor: linkTextColor
   }));
 };
 
