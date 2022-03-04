@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
+import { About } from './test/About';
 import './App.css';
+import { Home } from './test/Home';
+import Burger from './lib/components/Burger';
 
 function App() {
+  const links = [
+    { to: "/", title: "home" },
+    { to: "/about", title: "about" }
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header">
+        logo
+        <Burger links={links} navbarBckg="goldenrod" activeLinkBckg="pink" linkTextColor="red" />
+      </div>
+      <div className="app-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
     </div>
   );
 }

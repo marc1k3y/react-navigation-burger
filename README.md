@@ -1,12 +1,12 @@
-demo this navBurger <br />
+# demo
 https://marc1k3y.github.io/web-site/
 
-## Using
+## How use?
 
 `npm i react-nav-burger`
 
 ```
-import {Burger} from "react-nav-burger"
+import Burger from "react-nav-burger"
 
 export const Header = () => {
 
@@ -17,21 +17,22 @@ export const Header = () => {
   ]
   
   return (
-    <div>
+    <>
       <Burger 
         links={links} 
-        theme="classic"
-        activeLinkBckg="goldenrod" 
-        linkTextColor="black" />
-    </div>
+        navbarBckg="whitesmoke" 
+        activeLinkBckg="lightgray"
+        linkTextColor="black" 
+      />
+    </>
   )
 }
 ```
 
 ### Options
 ```
-links - required
-theme - "classic"\"dark"
-activeLinkBckg - default "lightgray"
-linkTextColor - default "black"
+links => required
+navbarBckg => optional
+activeLinkBckg => optional
+linkTextColor => optional
 ```
