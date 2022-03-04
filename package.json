@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marc1k3y/react-nav-burger-npmjs.git"
+    "url": "git+https://github.com/marc1k3y/react-navigation-burger.git"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
