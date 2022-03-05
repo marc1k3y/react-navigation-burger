@@ -2,10 +2,10 @@ import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./styles/navbar.css";
 
-const Navbar = ({ links, visible, close, navbarBckg, activeLinkBckg, linkTextColor }) => {
+const Navbar = ({ links, visible, close, navbarMarginTop, navbarBckg, activeLinkBckg, linkTextColor }) => {
   const { pathname } = useLocation()
   return (
-    <div className="navbar-wrapper" style={{ display: visible ? "flex" : "none", backgroundColor: navbarBckg }}>
+    <div className="navbar-wrapper" style={{ display: visible ? "flex" : "none", top: navbarMarginTop, backgroundColor: navbarBckg }}>
       {links.map((link, index) =>
         <NavLink
           style={{ backgroundColor: pathname === link.to && activeLinkBckg, color: linkTextColor }}

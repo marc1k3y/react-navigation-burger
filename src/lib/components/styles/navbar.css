@@ -1,7 +1,6 @@
 .navbar-wrapper {
   position: fixed;
   text-align: right;
-  top: 59px;
   right: 0px;
   flex-direction: column;
   gap: 10px;

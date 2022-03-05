@@ -19,7 +19,8 @@ export const Header = () => {
   return (
     <>
       <Burger 
-        links={links} 
+        links={links}
+        navbarMarginTop="50px"
         navbarBckg="whitesmoke" 
         activeLinkBckg="lightgray"
         linkTextColor="black" 
