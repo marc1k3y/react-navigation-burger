@@ -33,6 +33,7 @@ export const Header = () => {
 ### Options
 ```
 links => required
+navbarMarginTop => required
 navbarBckg => optional
 activeLinkBckg => optional
 linkTextColor => optional
