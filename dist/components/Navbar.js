@@ -18,6 +18,7 @@ const Navbar = _ref => {
     links,
     visible,
     close,
+    navbarMarginTop,
     navbarBckg,
     activeLinkBckg,
     linkTextColor
@@ -29,6 +30,7 @@ const Navbar = _ref => {
     className: "navbar-wrapper",
     style: {
       display: visible ? "flex" : "none",
+      top: navbarMarginTop,
       backgroundColor: navbarBckg
     }
   }, links.map((link, index) => /*#__PURE__*/_react.default.createElement(_reactRouterDom.NavLink, {
