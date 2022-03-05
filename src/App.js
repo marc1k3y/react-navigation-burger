@@ -13,7 +13,12 @@ function App() {
     <div className="App">
       <div className="header">
         logo
-        <Burger links={links} navbarBckg="goldenrod" activeLinkBckg="pink" linkTextColor="red" />
+        <Burger
+          links={links}
+          navbarMarginTop="50px"
+          navbarBckg="goldenrod"
+          activeLinkBckg="pink"
+          linkTextColor="red" />
       </div>
       <div className="app-content">
         <Routes>

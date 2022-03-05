@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import "./styles/burger.css";
 
-const Burger = ({ links, navbarBckg = "whitesmoke", activeLinkBckg = "lightgray", linkTextColor = "black" }) => {
+const Burger = ({ links, navbarMarginTop, navbarBckg = "whitesmoke", activeLinkBckg = "lightgray", linkTextColor = "black" }) => {
   const [moveBurger, setMoveBurger] = useState(false)
   return (
     <div>
@@ -16,6 +16,7 @@ const Burger = ({ links, navbarBckg = "whitesmoke", activeLinkBckg = "lightgray"
         links={links}
         visible={moveBurger}
         close={setMoveBurger}
+        navbarMarginTop={navbarMarginTop}
         navbarBckg={navbarBckg}
         activeLinkBckg={activeLinkBckg}
         linkTextColor={linkTextColor} />

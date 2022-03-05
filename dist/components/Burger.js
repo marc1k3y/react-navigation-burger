@@ -22,6 +22,7 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 const Burger = _ref => {
   let {
     links,
+    navbarMarginTop,
     navbarBckg = "whitesmoke",
     activeLinkBckg = "lightgray",
     linkTextColor = "black"
@@ -54,6 +55,7 @@ const Burger = _ref => {
     links: links,
     visible: moveBurger,
     close: setMoveBurger,
+    navbarMarginTop: navbarMarginTop,
     navbarBckg: navbarBckg,
     activeLinkBckg: activeLinkBckg,
     linkTextColor: linkTextColor
